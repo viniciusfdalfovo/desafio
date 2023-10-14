@@ -35,7 +35,7 @@ GET http://localhost/fipe-api/?marca=Saturn
 {
   "data": [
   {
-   "code": "51,
+   "code": 51,
    "vehicle": "Saturn"
   },
   {
