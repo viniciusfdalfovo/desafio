@@ -17,9 +17,12 @@ These instructions will help you set up and use the project on your server or lo
 
 Simply clone the repository to your machine or server or copy the index file to the HTTP server directory.
 ~~~bash
-git clone https://github.com/MEUUSER/fipe-api.git
+git clone https://github.com/viniciusfdalfovo/fipe-api.git
 ~~~
-
+Navigate to the project directory.
+~~~bash
+cd fipe fipe-api
+~~~
 ## Usage
 
 Simply insert the 'marca' search parameter into the URL.
