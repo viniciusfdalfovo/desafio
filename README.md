@@ -21,7 +21,7 @@ git clone https://github.com/viniciusfdalfovo/fipe-api.git
 ~~~
 Navigate to the project directory.
 ~~~bash
-cd fipe fipe-api
+cd fipe-api
 ~~~
 ## Usage
 
