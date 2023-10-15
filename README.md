@@ -1,4 +1,4 @@
-# About the fipe-api Project
+# About the Project
 
 This project was developed for the Starter Technical Challenge for the position of backend developer.
 
@@ -29,7 +29,7 @@ You can also just copy the index file to the HTTP server directory.
 
 Simply insert the 'marca' search parameter into the URL.
 
- * Requisição: '/desafio/api/?marca=Marca';
+ * Example: '/desafio/api/?marca=Marca'.
 
 ### Usage example
 
@@ -53,7 +53,7 @@ GET http://localhost/desafio/api/?marca=Saturn
 
 ## Errors
 
-The API provides error messages in JSON format when something goes wrong:
+The API provides error messages when something goes wrong:
 
 * Brand not provided - "error": "Marca não informada – Erro 400" 
 * Brand does not exist - "error": "Marca inexistente – Erro 400" 
