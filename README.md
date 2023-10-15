@@ -70,8 +70,24 @@ docker build -t desafio .
 ~~~~
 * Then use the following command to start the container an run the app in the port 80;
 ~~~~bash
-docker run -p 80:80 --rm  -d  --name  desafio desafio
+docker run -p 80:80 -d --name desafio desafio
 ~~~~
+
+## APIV2
+
+There is also another version of the api called apiv2. This version outputs the request in the array format, but it can also be changed to JSON format.
+
+To query it, just change the URL from api to apv2:
+~~~bash
+GET http://localhost/desafio/apiv2/?marca=Saturn
+~~~
+
+To build its docker image, just edit the docker file changing the source directory to apiv2:
+~~~bash
+FROM php:7.4-apache
+RUN apt update; apt install libwww-perl -y
+COPY apiv2/ /var/www/html/
+~~~
 
 ## Autor
 
