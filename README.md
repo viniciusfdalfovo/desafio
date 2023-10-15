@@ -15,7 +15,7 @@ These instructions will help you set up and use the project on your server or lo
 
 ## Installing
 
-Simply clone the repository to your machine or server or copy the index file to the HTTP server directory.
+Simply clone the repository to your machine or server:
 ~~~bash
 git clone https://github.com/viniciusfdalfovo/desafio.git
 ~~~
@@ -23,6 +23,8 @@ Navigate to the project directory.
 ~~~bash
 cd desafio
 ~~~
+You can also just copy the index file to the HTTP server directory.
+
 ## Usage
 
 Simply insert the 'marca' search parameter into the URL.
@@ -48,6 +50,7 @@ GET http://localhost/desafio/api/?marca=Saturn
  ]
 }
 ~~~
+
 ## Errors
 
 The API provides error messages in JSON format when something goes wrong:
@@ -69,8 +72,8 @@ docker build -t desafio .
 ~~~~bash
 docker run -p 80:80 --rm  -d  --name  desafio desafio
 ~~~~
+
 ## Autor
-~
 
 Vinícius Falavigna Dalfovo
 
