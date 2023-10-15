@@ -61,7 +61,7 @@ The API provides error messages when something goes wrong:
 
 ## Dockerfile
 
-This project also contains a dockerfile so you can use it easyly in another enviroment that has docker installed.
+This project also contains a dockerfile so you can use it easily in another enviroment that has docker installed.
 
 Here is a usage example:
 * First build the image by running the following command in the project folder:
