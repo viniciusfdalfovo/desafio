@@ -75,7 +75,7 @@ docker run -p 80:80 -d --name desafio desafio
 
 ## APIV2
 
-There is also another version of the api called apiv2. This version outputs the request in the array format, but it can also be changed to JSON format.
+There is also another version of the API called apiv2. This version outputs the request in the array format, but it can also be changed to JSON format.
 
 To query it, just change the URL from api to apv2:
 ~~~bash
