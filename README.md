@@ -17,22 +17,22 @@ These instructions will help you set up and use the project on your server or lo
 
 Simply clone the repository to your machine or server or copy the index file to the HTTP server directory.
 ~~~bash
-git clone https://github.com/viniciusfdalfovo/fipe-api.git
+git clone https://github.com/viniciusfdalfovo/desafio.git
 ~~~
 Navigate to the project directory.
 ~~~bash
-cd fipe-api
+cd desafio
 ~~~
 ## Usage
 
 Simply insert the 'marca' search parameter into the URL.
 
- * Requisição: '/fipe-api/?marca=Marca';
+ * Requisição: '/desafio/api/?marca=Marca';
 
 ### Usage example
 
 ~~~bash
-GET http://localhost/fipe-api/?marca=Saturn
+GET http://localhost/desafio/api/?marca=Saturn
 ~~~
 ~~~json
 {
@@ -54,9 +54,23 @@ The API provides error messages in JSON format when something goes wrong:
 
 * Brand not provided - "error": "Marca não informada – Erro 400" 
 * Brand does not exist - "error": "Marca inexistente – Erro 400" 
-* Communication error with the API - "error": "Erro de comunicação com a API – Erro 500" 
+* Communication error with the API - "error": "Erro de comunicação com a API – Erro 500"
 
+## Dockerfile
+
+This project also contains a dockerfile so you can use it easyly in another enviroment that has docker installed.
+
+Here is a usage example:
+* First build the image by running the following command in the project folder:
+~~~~bash
+docker build -t desafio .
+~~~~
+* Then use the following command to start the container an run the app in the port 80;
+~~~~bash
+docker run -p 80:80 --rm  -d  --name  desafio desafio
+~~~~
 ## Autor
+~
 
 Vinícius Falavigna Dalfovo
 
