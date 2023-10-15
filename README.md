@@ -75,7 +75,7 @@ docker run -p 80:80 -d --name desafio desafio
 
 ## APIv2
 
-There is also another version of the API called apiv2. This version outputs the request in the array format, but it can also be changed to JSON format by editing the variable in the var_dump function in the line 75.
+There is also another version of the API called apiv2. This version outputs the request in the array format, but it can also be changed to JSON format by editing the variable in the var_dump function on the line 75.
 * Array output:
 ~~~~php
 var_dump($aoutput);
