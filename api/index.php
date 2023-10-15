@@ -57,7 +57,7 @@ else {
     // Iteração de 0 até o número de modelos
     for ($i = 0;$i < $nmod; $i++){
         // Armazenar em 'modesp' o modelo específico, de acordo com sua posição no array
-        $modesp = $models[$i]['nome]';
+        $modesp = $models[$i]['nome'];
         // Armazenar em 'codesp' o código específico do modelo, de acordo com sua posição no array
         $codesp = $models[$i]['codigo'];
 
