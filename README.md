@@ -23,7 +23,7 @@ Navigate to the project directory.
 ~~~bash
 cd desafio
 ~~~
-You can also just copy the index file to the HTTP server directory.
+You can also just copy the index file to your HTTP server's directory.
 
 ## Usage
 
