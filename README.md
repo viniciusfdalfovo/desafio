@@ -2,7 +2,7 @@
 
 This project was developed for the Starter Technical Challenge for the position of backend developer.
 
-It consists of an API in PHP that queries all car models sold in Brazil from an informed brand. This data is obtained through a public API from FIPE(Fundo de Investimento em Pesquisa Econômica).
+It consists of an API developed in PHP that queries all car models sold in Brazil from an informed brand. This data is obtained through a public API from FIPE (Fundo de Investimento em Pesquisa Econômica).
 
 # Getting Started
 
@@ -73,9 +73,17 @@ docker build -t desafio .
 docker run -p 80:80 -d --name desafio desafio
 ~~~~
 
-## APIV2
+## APIv2
 
-There is also another version of the API called apiv2. This version outputs the request in the array format, but it can also be changed to JSON format.
+There is also another version of the API called apiv2. This version outputs the request in the array format, but it can also be changed to JSON format by editing the variable in the var_dump function in the line 75.
+* Array output:
+~~~~php
+var_dump($aoutput);
+~~~~
+* JSON output:
+~~~~php
+var_dump($joutput);
+~~~~
 
 To query it, just change the URL from api to apv2:
 ~~~bash
