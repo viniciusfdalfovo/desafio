@@ -34,7 +34,7 @@ Simply insert the 'marca' search parameter into the URL.
 ### Usage example
 
 ~~~bash
-# GET http://localhost/desafio/api/?marca=Saturn
+$ GET http://localhost/desafio/api/?marca=Saturn
 ~~~
 ~~~json
 {
