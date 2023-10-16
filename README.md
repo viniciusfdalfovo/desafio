@@ -66,11 +66,11 @@ This project also contains a dockerfile so you can use it easily in another envi
 Here is a usage example:
 * First build the image by running the following command in the project folder:
 ~~~~bash
-# docker build -t desafio .
+$ docker build -t desafio .
 ~~~~
 * Then use the following command to start the container an run the app in the port 80;
 ~~~~bash
-# docker run -p 80:80 -d --name desafio desafio
+$ docker run -p 80:80 -d --name desafio desafio
 ~~~~
 
 ## Makefile
