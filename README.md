@@ -20,14 +20,14 @@ Simply clone the repository to your machine or server:
 $ git clone https://github.com/viniciusfdalfovo/desafio.git
 ~~~
 
-Navigate to the project directory:
+Navigate to the project's directory:
 ~~~bash
 $ cd desafio
 ~~~
 
 ## Usage
 
-Simply insert the 'marca' search parameter into the URL.
+Insert the 'marca' search parameter into the URL.
 
  * Example: '/desafio/api/?marca=Marca'.
 
@@ -55,13 +55,13 @@ $ GET http://localhost/desafio/api/?marca=Saturn
 
 The API provides error messages when something goes wrong:
 
-* Brand not provided - "error": "Marca não informada – Erro 400" 
-* Brand does not exist - "error": "Marca inexistente – Erro 400" 
-* Communication error with the API - "error": "Erro de comunicação com a API – Erro 500"
+* Brand not provided - "Marca não informada – Erro 400" 
+* Brand does not exist - "Marca inexistente – Erro 400" 
+* Communication error with the API - "Erro de comunicação com a API – Erro 500"
 
 ## Dockerfile
 
-This project also contains a dockerfile so you can use it easily in another enviroment that has docker installed.
+This project also contains a Dockerfile so you can use it easily in another enviroment that has docker installed.
 
 Here is a usage example:
 * First build the image by running the following command in the project folder:
@@ -75,7 +75,7 @@ $ docker run -p 80:80 -d --name desafio desafio
 
 ## Makefile
 
-There is also an automation for creating the image and running the docker container via Makefile. To execute it, navigate to the project repository and run the following commands:
+There is also an automation to create the image and run the docker container via Makefile. To execute it, navigate to the project directory and run the following commands:
 ~~~~bash
 $ make docker
 
@@ -142,7 +142,7 @@ var_dump($joutput);
 ~~~~
 * Object output:
 ~~~~php
-var_dump($joutput);
+var_dump($ooutput);
 ~~~~
 
 To query it, just change the URL from api to apv2:
@@ -150,7 +150,7 @@ To query it, just change the URL from api to apv2:
 $ GET http://localhost/desafio/apiv2/?marca=Saturn
 ~~~
 
-To build its docker image, just edit the docker file changing the source directory to apiv2:
+To build its docker image, just edit the Dockerfile changing the source directory to apiv2:
 ~~~bash
 FROM php:7.4-apache
 RUN apt update; apt install libwww-perl -y
