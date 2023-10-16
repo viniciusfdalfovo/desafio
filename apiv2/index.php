@@ -67,7 +67,7 @@ else {
         ];
         // Formatar em JSON, caso necessario
         $joutput = json_encode($aoutput);
-        // Formatar como, caso necessario
+        // Formatar como objeto, caso necessario
         $ooutput = json_decode($joutput);
         // Faz o output da API no formato de array
         var_dump($aoutput);
