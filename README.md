@@ -17,12 +17,12 @@ These instructions will help you set up and use the project on your server or lo
 
 Simply clone the repository to your machine or server:
 ~~~bash
-# git clone https://github.com/viniciusfdalfovo/desafio.git
+$ git clone https://github.com/viniciusfdalfovo/desafio.git
 ~~~
 
 Navigate to the project directory:
 ~~~bash
-# cd desafio
+$ cd desafio
 ~~~
 
 ## Usage
@@ -77,7 +77,7 @@ Here is a usage example:
 
 There is also an automation for creating the image and running the docker container via Makefile. To execute it, navigate to the project repository and run the following commands:
 ~~~~bash
-# make docker
+$ make docker
 
 [+] Building 2.6s (8/8) FINISHED                                                                                                                                                                                      docker:default
  => [internal] load .dockerignore                                                                                                                                                                                               0.2s
@@ -99,7 +99,7 @@ ab41bb469a34d0690190a8751ca62737c1fa6129622f2e0248ff7f29c18cf583
 
 You can see the other options with help:
 ~~~~bash
-# make help
+$ make help
 
 Usage:
   make <target>
@@ -114,7 +114,7 @@ Targets:
 
 OBS: the endpoint changes when running the API with docker and the queries have to be done like this:
 ~~~~bash
-# GET localhost/?marca=Saturn
+$ GET localhost/?marca=Saturn
 {
   "data": [
   {
@@ -143,7 +143,7 @@ var_dump($joutput);
 
 To query it, just change the URL from api to apv2:
 ~~~bash
-GET http://localhost/desafio/apiv2/?marca=Saturn
+$ GET http://localhost/desafio/apiv2/?marca=Saturn
 ~~~
 
 To build its docker image, just edit the docker file changing the source directory to apiv2:
