@@ -31,15 +31,15 @@ $brand_found = array_search("$input", $brands);
 
 // Validar se houve erros na comunicação com a API
 if(curl_error($ch)){
-    echo '"error": "Erro de comunicação com a API – Erro 500"';
+    echo '{'."\n".' "error": "Erro de comunicação com a API – Erro 500"'."\n".'}';
 }
 // Validar se o parâmetro de consulta foi inserido
 elseif (empty($input)) {
-    echo '"error": "Marca não informada – Erro 400"';
+    echo '{'."\n".' "error": "Marca não informada – Erro 400"'."\n".'}';
 }
 // Validar se o parâmetro de consulta é válido
 elseif (empty($brand_found)) {
-    echo '"error": "Marca inexistente – Erro 400"';
+    echo '{'."\n".' "error": "Marca inexistente – Erro 400"'."\n".'}';
 }
 // Realizar consulta final após validar os passos anteriores
 else {
