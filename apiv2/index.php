@@ -73,3 +73,4 @@ else {
         var_dump($aoutput);
     }
 }
+curl_close($ch);
