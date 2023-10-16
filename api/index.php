@@ -31,7 +31,9 @@ $brand_found = array_search("$input", $brands);
 
 // Validar se houve erros na comunicação com a API
 if(curl_error($ch)){
-    echo '"error": "Erro de comunicação com a API – Erro 500"';
+    echo '"{
+    error": "Erro de comunicação com a API – Erro 500"
+    }';
 }
 // Validar se o parâmetro de consulta foi inserido
 elseif (empty($input)) {
